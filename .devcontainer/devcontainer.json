@@ -1,5 +1,8 @@
 {
-	"name": "Scala",
+	"name": "scala-devcontainer",
+	"runArgs": [
+        "--name=scala-devcontainer"
+    ],
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
@@ -35,7 +38,9 @@
         // Add the IDs of extensions you want installed when the container is created.
 	    "extensions": [
 		    "vscjava.vscode-java-pack",
-		    "scalameta.metals"
+			"scala-lang.scala",
+		    "scalameta.metals",
+			"lightbend.vscode-sbt-scala"
 	    ]
     }
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
